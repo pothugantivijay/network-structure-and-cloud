@@ -1,23 +1,24 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5; /* Light background */
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(to right, #6a11cb, #2575fc); /* Professional gradient background */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
 }
 
 .container {
-    max-width: 800px;
+    width: 80%;
+    max-width: 600px;
     background-color: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -29,6 +30,7 @@ h1 {
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -36,6 +38,7 @@ li {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -43,7 +46,8 @@ a {
     padding: 12px 20px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 a:hover {
@@ -52,4 +56,18 @@ a:hover {
 
 a:active {
     background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    a {
+        padding: 10px 15px;
+    }
 }
